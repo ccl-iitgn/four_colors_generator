@@ -1,0 +1,28 @@
+main{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly ;
+}
+.four-colors-grid {
+  display: inline-grid;
+  margin: 20px auto;
+  border: 2px solid #34495e;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.four-colors-cell {
+  border: 1px solid #bdc3c7;
+  transition: background-color 0.3s ease;
+}
+
+
+.four-colors-cell-fixed {
+  cursor: default;
+}
+
+.four-colors-cell-editable {
+  cursor: pointer;
+  background-color: #eee;
+}
