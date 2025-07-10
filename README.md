@@ -1,12 +1,23 @@
-# React + Vite
+# 🧠 Four Colors Puzzle Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the **offline puzzle generator** for the [Four Colors Puzzle Game](https://github.com/ccl-iitgn/four_colors). It generates the **first `n` valid and unique map coloring puzzles**, each guaranteed to be solvable using the **Four Color Theorem** (no two adjacent regions share the same color, and at most 4 colors are used).
+---
 
-Currently, two official plugins are available:
+## 📂 Repository
+- 🧩 Generator Code: [https://github.com/ccl-iitgn/four_colors_generator](https://github.com/ccl-iitgn/four_colors_generator)
+- 🎮 Frontend UI: [https://github.com/ccl-iitgn/four_colors](https://github.com/ccl-iitgn/four_colors)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🧪 How to Run
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Clone the repository
+git clone https://github.com/ccl-iitgn/four_colors_generator.git
+cd four_colors_generator
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Generate the first n puzzles (e.g., 10 puzzles)
+python generate_puzzles.py --n 10
